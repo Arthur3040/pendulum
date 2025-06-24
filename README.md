@@ -1,5 +1,5 @@
 # pendulum
-physics 2 school work 
+physics 2 pendulum detection with opencv  
 ## require
 opencv, gnuplot
 ## run
