@@ -1,9 +1,9 @@
 # pendulum
 physics 2 school work 
-# require
+## require
 opencv, gnuplot
-# run
+## run
 make
 after make you can do ./PENDULUM to get the data amd ./a.out to plot the data;
-# video
+## video
 https://www.youtube.com/watch?v=sWTO1WDyM78
