@@ -1,0 +1,20 @@
+set term wxt enhanced
+
+set title 'Harmonic Oscillator'
+set xlabel 't(s)'
+set ylabel 'x(m)'
+unset key
+
+f(x) = K+A*exp(-b*x)*cos(w*x-p)
+fit [0:60] [:] f(x) 'data/pendulumfinaldata.txt' via K,A,b,w,p 
+set samples 18000
+set print 'data/curvefitting.txt' 
+print b
+print w
+
+plot [0:60] 'data/pendulumfinaldata.txt' lc rgb 'blue', f(x) lc rgb 'red'
+
+set term png size 1080,480
+set output "imgs/grafico.png"
+replot 
+set term x11
